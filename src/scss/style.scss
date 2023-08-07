@@ -239,7 +239,9 @@ body {
 
 @media (max-width: 1399px) {
   :root {
+    --gap-32: 27px;
     --gap-35: 29px;
+    --fz-18: 17px;
   }
 }
 
@@ -269,4 +271,43 @@ body {
         top: 0px;
     }
   }
+
+  
+}
+
+@media (max-width: 575px) {
+  :root {
+    --fz-34: 16px;
+    --lh-38: 20px;
+    --padding-20: 8px;
+  }
+  .container {
+    padding: 0px 12px;
+  }
+
+  .burger {
+    top: 5px;
+    right: 12px;
+    span {
+      width: 16px;
+    }
+    &.active {
+      span {
+        &:nth-child(1) {
+          transform: rotate(45deg) translate(2px, 3px);
+        }
+      }
+    }
+  }
+
+  .text__dec {
+    &-main {
+      letter-spacing: -1px;
+      &:before {
+        height: 1px;
+        bottom: -1px;
+      }
+    }
+  }
+
 }

@@ -59,5 +59,30 @@
                 }
             }
         }
+        .nav__link {
+            text-align: center;
+        }
     }
 }
+
+
+
+
+@media (max-width: 575px) {
+   .header {
+    padding-top: 16px;
+    .nav__link {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    &.active {
+        .header__logo {
+            span {
+                font-size: 20px;
+                line-height: 24px;
+            }
+        }
+    }
+   }
+  
+  }

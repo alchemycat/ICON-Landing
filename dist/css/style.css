@@ -299,6 +299,22 @@ input, input::placeholder {
   .header__wrapper-contacts.active {
     display: block;
   }
+  .header .nav__link {
+    text-align: center;
+  }
+}
+@media (max-width: 575px) {
+  .header {
+    padding-top: 16px;
+  }
+  .header .nav__link {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .header.active .header__logo span {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 .intro {
   padding-top: 600px;
@@ -336,7 +352,9 @@ input, input::placeholder {
 
 @media (max-width: 1399px) {
   :root {
+    --gap-32: 27px;
     --gap-35: 29px;
+    --fz-18: 17px;
   }
 }
 @media (max-width: 1199px) {
@@ -360,5 +378,32 @@ input, input::placeholder {
   }
   .overlay.active {
     top: 0px;
+  }
+}
+@media (max-width: 575px) {
+  :root {
+    --fz-34: 16px;
+    --lh-38: 20px;
+    --padding-20: 8px;
+  }
+  .container {
+    padding: 0px 12px;
+  }
+  .burger {
+    top: 5px;
+    right: 12px;
+  }
+  .burger span {
+    width: 16px;
+  }
+  .burger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(2px, 3px);
+  }
+  .text__dec-main {
+    letter-spacing: -1px;
+  }
+  .text__dec-main:before {
+    height: 1px;
+    bottom: -1px;
   }
 }
