@@ -1,5 +1,8 @@
 .intro {
-    padding-top: 600px;
+    // padding-top: 600px;
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
     padding-bottom: 64px;
     background-image: url("../img/bg-1.jpg");
     background-repeat: no-repeat;
@@ -29,5 +32,17 @@
     }
     &__button {
         margin-top: var(--margin-32);
+    }
+}
+
+@media (max-width: 575px) {
+    .intro {
+        &__header {
+            span {
+                &:nth-child(1) {
+                    letter-spacing: -3px;
+                }
+            }
+        }
     }
 }
