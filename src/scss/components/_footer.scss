@@ -1,0 +1,70 @@
+.footer {
+    padding-top: var(--padding-150);
+    padding-bottom: 50px;
+    background-color: var(--white-color);
+    &__text {
+        font-size: 18px;
+        line-height: 24px;
+        color: var(--secondary-color);
+        text-transform: uppercase;
+        max-width: 260px;
+    }
+    &__col {
+        &-1 {
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+        }
+    }
+    &__caption {
+        color: var(--black-color);
+        text-transform: uppercase;
+        font-size: var(--fz-34);
+        line-height: var(--lh-38);
+    }
+    &__contacts {
+        margin-top: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px 0px;
+        &-link {
+            color: var(--black-color);
+            font-size: 18px;
+            line-height: 24px;
+            text-transform: uppercase;
+            display: flex;
+            gap: 0px 19px;
+            align-items: center;
+            svg {
+                width: 18px;
+                height: 18px;
+            }
+            span {
+                color: var(--black-color);
+                font-size: inherit;
+                line-height: inherit;
+                text-transform: uppercase;
+            }
+        }
+    }
+    &__address {
+        margin-top: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px 0px;
+
+        &-link {
+            font-size: 18px;
+            line-height: 24px;
+            color: #E07E44;
+            text-transform: uppercase;
+        }
+        &-text {
+            font-size: 18px;
+            line-height: 24px;
+            color: var(--black-color);
+            text-transform: uppercase;
+            margin-top: 24px;
+        }
+    }
+}
