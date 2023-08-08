@@ -990,6 +990,114 @@ input, input::placeholder {
     padding: 11px 0px !important;
   }
 }
+.rooms {
+  padding: var(--padding-150) 0px;
+}
+.rooms__h2 {
+  text-transform: uppercase;
+  max-width: 396px;
+}
+.rooms__h2 .text__dec-main, .rooms__h2 .text__dec-prefix, .rooms__h2 .text__dec-postfix {
+  font-size: var(--fz-52);
+  line-height: var(--lh-58);
+}
+.rooms__wrapper-2 {
+  margin-top: var(--margin-80);
+}
+.rooms__col-left {
+  display: flex;
+  flex-direction: column;
+  gap: 50px 0px;
+  justify-content: center;
+}
+.rooms__text {
+  font-size: var(--fz-34);
+  line-height: var(--lh-38);
+  text-transform: uppercase;
+}
+.rooms__slide {
+  max-width: 635px;
+  height: 550px;
+}
+.rooms__slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.rooms__arrow {
+  cursor: pointer;
+  z-index: 100;
+  padding: 16px 12px;
+}
+.rooms__slider-navigation {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.rooms .swiper-pagination {
+  top: auto !important;
+  bottom: 10px !important;
+}
+.rooms .swiper-pagination-bullet {
+  background-color: var(--third-color);
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  opacity: 1 !important;
+  cursor: pointer;
+}
+.rooms .swiper-pagination-bullet-active {
+  background-color: var(--white-color);
+}
+
+@media (max-width: 1199px) {
+  .rooms__slide {
+    height: 440px;
+  }
+}
+@media (max-width: 991px) {
+  .rooms__slide {
+    max-width: 100%;
+  }
+  .rooms__col-right {
+    margin-top: 60px;
+  }
+}
+@media (max-width: 575px) {
+  .rooms__h2 {
+    max-width: 124px;
+  }
+  .rooms__h2 .text__dec-prefix, .rooms__h2 .text__dec-postfix, .rooms__h2 .text__dec-main {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0px;
+  }
+  .rooms__wrapper-2 {
+    margin-top: 28px;
+  }
+  .rooms__col-left {
+    gap: 24px 0px;
+  }
+  .rooms__col-right {
+    margin-top: 24px;
+  }
+  .rooms__slide {
+    width: 100%;
+    height: 220px;
+  }
+  .rooms__arrow {
+    padding: 8px 6px;
+  }
+  .rooms__arrow svg {
+    width: 14px;
+    height: 9px;
+  }
+  .rooms .swiper-pagination-bullet {
+    width: 4px;
+    height: 4px;
+  }
+}
 @media (max-width: 1399px) {
   :root {
     --gap-32: 27px;
