@@ -1,0 +1,39 @@
+.about {
+    padding: var(--padding-150) 0px;
+    background-color: var(--white-color);
+    &__h2 {
+        display: flex;
+    }
+    &__desc {
+        color: var(--black-color);
+        text-align: right;
+    }
+    &__col {
+        &-right {
+            display: flex;
+            flex-direction: column;
+            gap: 35px;
+        }
+    }
+    .text__dec-main {
+        padding: 0px 25px;
+        text-transform: uppercase;
+    }
+}
+
+@media (max-width: 767px) {
+    .about {
+        &__h2 {
+            text-align: center;
+        }
+        &__wrapper {
+            gap: 24px;
+        }
+        &__desc {
+            text-align: left;
+        }
+        &__col-right {
+            gap: 24px;
+        }
+    }
+}

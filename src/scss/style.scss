@@ -24,6 +24,7 @@
     --lh-38: 38px;
     --lh-40: 40px;
     --lh-46: 46px;
+    --lh-58: 58px;
     --lh-100: 100px;
     --lh-120: 120px;
     --padding-20: 20px;
@@ -36,6 +37,7 @@
     --margin-21: 21px;
     --margin-24: 24px;
     --margin-32: 32px;
+    --margin-36: 36px;
     --margin-50: 50px;
     --margin-80: 80px;
     --margin-150: 150px;
@@ -117,10 +119,6 @@ body {
 
 //my styles
 
-// .container {
-  // max-width: 1430px;
-// }
-
 .logo {
   color: var(--orange-color);
   font-size: var(--fz-34);
@@ -129,18 +127,27 @@ body {
 
 .text__dec {
   display: flex;
+  width: 100%;
+  max-width: 254px;
+  &-h2 {
+    max-width: 396px;
+  }
   &-prefix, &-postfix {
     font-size: var(--fz-34);
     line-height: var(--lh-38);
     color: var(--white-color);
+    &-black {
+      color: var(--black-color);
+    }
   }
   &-main {
+    width: 100%;
     position: relative;
     font-size: var(--fz-34);
     line-height: var(--lh-38);
     color: var(--third-color);
     letter-spacing: -3px;
-    padding: 0px var(--padding-20);
+    text-align: center;
     &:before {
       content: "";
       position: absolute;
@@ -149,6 +156,9 @@ body {
       width: 100%;
       height: 3px;
       background-color: var(--white-color);
+    }
+    &-black:before {
+      background-color: var(--black-color);
     }
   }
 
@@ -233,9 +243,19 @@ body {
   transition: all .4s ease;
 }
 
+.text {
+  &__24 {
+    font-size: var(--fz-24);
+    line-height: var(--lh-32);
+    text-transform: uppercase;
+  }
+}
+
 
 @import "./components/header";
 @import "./components/intro";
+@import "./components/about";
+@import "./components/important";
 
 @media (max-width: 1399px) {
   :root {
@@ -266,9 +286,11 @@ body {
 
 @media (max-width: 991px) {
   :root {
+    --fz-24: 18px;
     --fz-36: 30px;
     --fz-92: 52px;
     --fz-112: 95px;
+    --lh-32: 26px;
     --lh-46: 40px;
     --lh-100: 60px;
     --lh-120: 105px;
@@ -310,6 +332,7 @@ body {
     --lh-100: 24px;
     --lh-120: 24px;
     --padding-20: 8px;
+    --padding-150: 50px;
   }
 
   .button {
@@ -338,13 +361,27 @@ body {
   }
 
   .text__dec {
+    width: 100%;
     &-main {
-      letter-spacing: -1px;
+      width: 100%;
+      text-align: center;
+      // letter-spacing: -1px;
       &:before {
         height: 1px;
         bottom: -1px;
       }
     }
+  }
+
+  .text {
+    &__24 {
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+
+  .intro {
+    padding-bottom: 24px;
   }
 
 }

@@ -58,6 +58,7 @@
   --lh-38: 38px;
   --lh-40: 40px;
   --lh-46: 46px;
+  --lh-58: 58px;
   --lh-100: 100px;
   --lh-120: 120px;
   --padding-20: 20px;
@@ -70,6 +71,7 @@
   --margin-21: 21px;
   --margin-24: 24px;
   --margin-32: 32px;
+  --margin-36: 36px;
   --margin-50: 50px;
   --margin-80: 80px;
   --margin-150: 150px;
@@ -154,19 +156,28 @@ input, input::placeholder {
 
 .text__dec {
   display: flex;
+  width: 100%;
+  max-width: 254px;
+}
+.text__dec-h2 {
+  max-width: 396px;
 }
 .text__dec-prefix, .text__dec-postfix {
   font-size: var(--fz-34);
   line-height: var(--lh-38);
   color: var(--white-color);
 }
+.text__dec-prefix-black, .text__dec-postfix-black {
+  color: var(--black-color);
+}
 .text__dec-main {
+  width: 100%;
   position: relative;
   font-size: var(--fz-34);
   line-height: var(--lh-38);
   color: var(--third-color);
   letter-spacing: -3px;
-  padding: 0px var(--padding-20);
+  text-align: center;
 }
 .text__dec-main:before {
   content: "";
@@ -176,6 +187,9 @@ input, input::placeholder {
   width: 100%;
   height: 3px;
   background-color: var(--white-color);
+}
+.text__dec-main-black:before {
+  background-color: var(--black-color);
 }
 
 .nav__list {
@@ -245,6 +259,12 @@ input, input::placeholder {
   width: 100%;
   background-color: var(--white-color);
   transition: all 0.4s ease;
+}
+
+.text__24 {
+  font-size: var(--fz-24);
+  line-height: var(--lh-32);
+  text-transform: uppercase;
 }
 
 .header {
@@ -357,6 +377,211 @@ input, input::placeholder {
     letter-spacing: -3px;
   }
 }
+.about {
+  padding: var(--padding-150) 0px;
+  background-color: var(--white-color);
+}
+.about__h2 {
+  display: flex;
+}
+.about__desc {
+  color: var(--black-color);
+  text-align: right;
+}
+.about__col-right {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+.about .text__dec-main {
+  padding: 0px 25px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 767px) {
+  .about__h2 {
+    text-align: center;
+  }
+  .about__wrapper {
+    gap: 24px;
+  }
+  .about__desc {
+    text-align: left;
+  }
+  .about__col-right {
+    gap: 24px;
+  }
+}
+.important {
+  padding: var(--padding-150) 0px;
+}
+.important__h2 .text__dec-prefix, .important__h2 .text__dec-postfix {
+  font-size: var(--fz-52);
+  line-height: var(--lh-58);
+  text-transform: uppercase;
+}
+.important__h2 .text__dec-main {
+  font-size: var(--fz-52);
+  line-height: var(--lh-58);
+  text-transform: uppercase;
+}
+.important__row-2 {
+  margin-top: var(--margin-80);
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.important__list {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+}
+.important__item {
+  max-width: 410px;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--white-color);
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.important__item-1 .important__text-extra {
+  top: 14px;
+  right: 0px;
+}
+.important__item-2 .important__text-extra {
+  left: 0px;
+  top: 30px;
+  max-width: 152px;
+  text-align: left;
+}
+.important__item-2:before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 332px;
+  height: 261px;
+  background-image: url("../img/vector-1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 1;
+}
+.important__item-3 .important__text-md {
+  max-width: 258px;
+}
+.important__item-3:before {
+  content: "";
+  position: absolute;
+  bottom: 53px;
+  right: 9px;
+  width: 332px;
+  height: 327px;
+  background-image: url("../img/vector-2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 1;
+}
+.important__item-4 .important__text-extra {
+  top: -60px;
+  right: 0px;
+}
+.important__item-4 .important__text-md {
+  max-width: 180px;
+}
+.important__item-4:before {
+  content: "";
+  position: absolute;
+  bottom: 54px;
+  right: 0px;
+  width: 257px;
+  height: 364px;
+  background-image: url("../img/vector-3.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 1;
+}
+.important__item-5 .important__desc {
+  position: relative;
+}
+.important__item-5 .important__text-sm {
+  position: absolute;
+  bottom: -20px;
+  right: 0px;
+  max-width: 115px;
+}
+.important__item-6 .important__desc {
+  position: relative;
+}
+.important__item-6 .important__text-md {
+  max-width: 248px;
+}
+.important__item-6 .important__text-sm {
+  position: absolute;
+  bottom: -16px;
+  left: 0px;
+  text-align: left;
+  max-width: 224px;
+}
+.important__caption {
+  max-width: 100%;
+}
+.important__caption .text__dec-prefix, .important__caption .text__dec-postfix {
+  font-size: var(--fz-34);
+  line-height: var(--lh-38);
+  text-transform: uppercase;
+  letter-spacing: -3px;
+}
+.important__caption .text__dec-main {
+  font-size: var(--fz-34);
+  line-height: var(--lh-38);
+  text-transform: uppercase;
+  letter-spacing: -3px;
+  padding: 0px 25px;
+}
+.important__desc {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: var(--margin-32);
+  width: 100%;
+}
+.important__text {
+  color: var(--black-color);
+}
+.important__text-md {
+  font-size: var(--fz-18);
+  line-height: var(--lh-24);
+  text-transform: uppercase;
+  max-width: 200px;
+}
+.important__text-sm {
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: var(--third-color);
+  letter-spacing: -1px;
+  max-width: 139px;
+  text-align: right;
+}
+.important__text-extra {
+  text-transform: uppercase;
+  position: absolute;
+  text-align: right;
+  max-width: 207px;
+}
+.important__img {
+  position: relative;
+  max-width: 402px;
+  margin-top: var(--margin-36);
+}
+.important__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 @media (max-width: 1399px) {
   :root {
     --gap-32: 27px;
@@ -384,9 +609,11 @@ input, input::placeholder {
 }
 @media (max-width: 991px) {
   :root {
+    --fz-24: 18px;
     --fz-36: 30px;
     --fz-92: 52px;
     --fz-112: 95px;
+    --lh-32: 26px;
     --lh-46: 40px;
     --lh-100: 60px;
     --lh-120: 105px;
@@ -423,6 +650,7 @@ input, input::placeholder {
     --lh-100: 24px;
     --lh-120: 24px;
     --padding-20: 8px;
+    --padding-150: 50px;
   }
   .button {
     padding: 5px 16px;
@@ -442,11 +670,22 @@ input, input::placeholder {
   .burger.active span:nth-child(1) {
     transform: rotate(45deg) translate(2px, 3px);
   }
+  .text__dec {
+    width: 100%;
+  }
   .text__dec-main {
-    letter-spacing: -1px;
+    width: 100%;
+    text-align: center;
   }
   .text__dec-main:before {
     height: 1px;
     bottom: -1px;
+  }
+  .text__24 {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .intro {
+    padding-bottom: 24px;
   }
 }
