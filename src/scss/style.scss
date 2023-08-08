@@ -21,6 +21,7 @@
     --lh-18: 18px;
     --lh-24: 24px;
     --lh-32: 32px;
+    --lh-34: 34px;
     --lh-38: 38px;
     --lh-40: 40px;
     --lh-46: 46px;
@@ -262,12 +263,14 @@ body {
 @import "./components/important";
 @import "./components/numbers";
 @import "./components/rooms";
+@import "./components/team";
 
 @media (max-width: 1399px) {
   :root {
     --gap-32: 27px;
     --gap-35: 29px;
     --fz-18: 17px;
+    --fz-30: 28px;
     --fz-34: 29px;
     --fz-92: 84px;
     --lh-100: 92px;

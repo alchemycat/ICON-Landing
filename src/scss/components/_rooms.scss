@@ -88,6 +88,14 @@
     }
 }
 
+@media (max-width: 767px) {
+    .rooms {
+        &__h2 {
+            max-width: 200px;
+        }
+    }
+}
+
 @media (max-width: 575px) {
     .rooms {
         &__h2 {
