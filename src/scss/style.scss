@@ -262,6 +262,7 @@ body {
     --gap-32: 27px;
     --gap-35: 29px;
     --fz-18: 17px;
+    --fz-34: 29px;
     --fz-92: 84px;
     --lh-100: 92px;
   }
@@ -274,7 +275,7 @@ body {
     --padding-20: 16px;
     --padding-24: 20px;
     --fz-18: 16px;
-    --fz-34: 30px;
+    --fz-34: 28px;
     --fz-92: 70px;
     --fz-112: 100px;
     --lh-24: 20px;
@@ -312,10 +313,14 @@ body {
 
 @media (max-width: 767px) {
   :root {
+    --fz-18: 15px;
+    --fz-34: 24px;
     --fz-36: 26px;
+    --fz-52: 30px;
     --fz-92: 39px;
     --fz-112: 82px;
     --lh-46: 32px;
+    --lh-58: 40px;
     --lh-100: 45px;
     --lh-120: 95px;
   }
@@ -323,6 +328,7 @@ body {
 
 @media (max-width: 575px) {
   :root {
+    --fz-18: 14px;
     --fz-34: 16px;
     --fz-36: 14px;
     --fz-92: 20px;
