@@ -18,14 +18,14 @@
         }
     }
     &__caption {
-        font-size: 112px;
-        line-height: 120px;
+        font-size: var(--fz-112);
+        line-height: var(--lh-120);
         color: var(--secondary-color);
     }
     &__desc {
         margin-top: 32px;
-        font-size: 34px;
-        line-height: 38px;
+        font-size: var(--fz-32);
+        line-height: var(--lh-38);
         color: var(--secondary-color);
         text-transform: uppercase;
         max-width: 590px;
@@ -65,8 +65,8 @@
         }
 
         &-caption {
-            font-size: 34px;
-            line-height: 38px;
+            font-size: var(--fz-34);
+            line-height: var(--lh-38);
             text-transform: uppercase;
         }
         &-text {
@@ -78,5 +78,160 @@
     }
     &__button {
         z-index: 1;
+    }
+}
+
+@media (max-width: 1399px) {
+    .numbers {
+        &__call {
+            &:after {
+                left: 56px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+    .numbers {
+        &__items {
+            &-wrapper {
+                gap: 40px 0px;
+            }
+        }
+        &__call {
+            &:after {
+                left: -138px;
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .numbers {
+        &__caption {
+            font-size: 80px;
+            line-height: 90px;
+        }
+        &__desc {
+            margin-top: 16px;
+        }
+        &__call {
+            margin-top: 50px;
+            padding: 30px;
+            &:after {
+                content: "";
+                top: -32px;
+                left: -164px;
+                width: 640px;
+                height: 252px;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .numbers {
+        &__h2 {
+            max-width: 200px;
+        }
+        &__items-wrapper {
+            gap: 25px 0px;
+        }
+        &__call {
+            &:before {
+                top: -13px;
+                right: -63px;
+                width: 234px;
+                height: 300px;
+                transform: rotate(450deg);
+             }
+             &:after {
+                 background-image: url(../img/vector-6.png);
+                left: 0px;
+                width: 540px;
+                height: 82px;
+                top: 46px;
+            }
+             &-caption {
+                position: relative;
+                font-size: 19px;
+                line-height: 25px;
+                text-align: center;
+                z-index: 1;
+            }
+            &-text {
+                font-size: 14px;
+                line-height: 16px;
+                margin-top: 15px;
+                text-align: center;
+            }
+        }
+        &__caption {
+            font-size: 60px;
+            line-height: 70px;
+        }
+        &__desc {
+            font-size: 16px;
+            line-height: 18px;
+        }
+        &__button {
+            width: 100%;
+            max-width: 100%;
+            margin-top: 24px;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .numbers {
+        &__h2 {
+            max-width: 105px;
+            .text__dec {
+                &-prefix, &-postfix, &-main {
+                    font-size: 16px;
+                    line-height: 20px;
+                    letter-spacing: 0px;
+                }
+            }
+        }
+        &__items-wrapper {
+            gap: 24px 0px;
+        }
+        &__call {
+            padding: 24px 12px;
+            margin: 0px 0px;
+            margin-top: 60px;
+            &-caption {
+                font-size: 18px;
+                line-height: 24px;
+                
+            }
+            &-text {
+                position: relative;
+                z-index: 1;
+                max-width: 200px;
+                margin: 0 auto;
+                margin-top: 16px;
+            }
+            &:before {
+                top: 5px;
+            }
+            &:after {
+                width: 100%;
+                top: 31px;
+            }
+        }
+        &__caption {
+            font-size: 30px;
+            line-height: 34px;
+        }
+        &__desc {
+            margin-top: 8px;
+        }
+        &__button {
+            font-size: 14px !important;
+            line-height: 18px !important;
+            padding: 11px 0px !important;
+        }
     }
 }

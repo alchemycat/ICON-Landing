@@ -801,14 +801,14 @@ input, input::placeholder {
   gap: 80px 0px;
 }
 .numbers__caption {
-  font-size: 112px;
-  line-height: 120px;
+  font-size: var(--fz-112);
+  line-height: var(--lh-120);
   color: var(--secondary-color);
 }
 .numbers__desc {
   margin-top: 32px;
-  font-size: 34px;
-  line-height: 38px;
+  font-size: var(--fz-32);
+  line-height: var(--lh-38);
   color: var(--secondary-color);
   text-transform: uppercase;
   max-width: 590px;
@@ -847,8 +847,8 @@ input, input::placeholder {
   z-index: 0;
 }
 .numbers__call-caption {
-  font-size: 34px;
-  line-height: 38px;
+  font-size: var(--fz-34);
+  line-height: var(--lh-38);
   text-transform: uppercase;
 }
 .numbers__call-text {
@@ -861,6 +861,135 @@ input, input::placeholder {
   z-index: 1;
 }
 
+@media (max-width: 1399px) {
+  .numbers__call:after {
+    left: 56px;
+  }
+}
+@media (max-width: 1199px) {
+  .numbers__items-wrapper {
+    gap: 40px 0px;
+  }
+  .numbers__call:after {
+    left: -138px;
+  }
+}
+@media (max-width: 991px) {
+  .numbers__caption {
+    font-size: 80px;
+    line-height: 90px;
+  }
+  .numbers__desc {
+    margin-top: 16px;
+  }
+  .numbers__call {
+    margin-top: 50px;
+    padding: 30px;
+  }
+  .numbers__call:after {
+    content: "";
+    top: -32px;
+    left: -164px;
+    width: 640px;
+    height: 252px;
+  }
+}
+@media (max-width: 767px) {
+  .numbers__h2 {
+    max-width: 200px;
+  }
+  .numbers__items-wrapper {
+    gap: 25px 0px;
+  }
+  .numbers__call:before {
+    top: -13px;
+    right: -63px;
+    width: 234px;
+    height: 300px;
+    transform: rotate(450deg);
+  }
+  .numbers__call:after {
+    background-image: url(../img/vector-6.png);
+    left: 0px;
+    width: 540px;
+    height: 82px;
+    top: 46px;
+  }
+  .numbers__call-caption {
+    position: relative;
+    font-size: 19px;
+    line-height: 25px;
+    text-align: center;
+    z-index: 1;
+  }
+  .numbers__call-text {
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 15px;
+    text-align: center;
+  }
+  .numbers__caption {
+    font-size: 60px;
+    line-height: 70px;
+  }
+  .numbers__desc {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .numbers__button {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 24px;
+  }
+}
+@media (max-width: 575px) {
+  .numbers__h2 {
+    max-width: 105px;
+  }
+  .numbers__h2 .text__dec-prefix, .numbers__h2 .text__dec-postfix, .numbers__h2 .text__dec-main {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0px;
+  }
+  .numbers__items-wrapper {
+    gap: 24px 0px;
+  }
+  .numbers__call {
+    padding: 24px 12px;
+    margin: 0px 0px;
+    margin-top: 60px;
+  }
+  .numbers__call-caption {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .numbers__call-text {
+    position: relative;
+    z-index: 1;
+    max-width: 200px;
+    margin: 0 auto;
+    margin-top: 16px;
+  }
+  .numbers__call:before {
+    top: 5px;
+  }
+  .numbers__call:after {
+    width: 100%;
+    top: 31px;
+  }
+  .numbers__caption {
+    font-size: 30px;
+    line-height: 34px;
+  }
+  .numbers__desc {
+    margin-top: 8px;
+  }
+  .numbers__button {
+    font-size: 14px !important;
+    line-height: 18px !important;
+    padding: 11px 0px !important;
+  }
+}
 @media (max-width: 1399px) {
   :root {
     --gap-32: 27px;
@@ -921,6 +1050,7 @@ input, input::placeholder {
     --lh-58: 40px;
     --lh-100: 45px;
     --lh-120: 95px;
+    --margin-80: 24px;
   }
 }
 @media (max-width: 575px) {
