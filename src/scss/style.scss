@@ -251,11 +251,16 @@ body {
   }
 }
 
+.third-color {
+  color: var(--third-color)!important;
+}
+
 
 @import "./components/header";
 @import "./components/intro";
 @import "./components/about";
 @import "./components/important";
+@import "./components/numbers";
 
 @media (max-width: 1399px) {
   :root {

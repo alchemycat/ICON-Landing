@@ -1,0 +1,82 @@
+.numbers {
+    background-color: var(--white-color);
+    padding: var(--padding-150) 0px;
+    &__h2 {
+        text-transform: uppercase;
+        max-width: 396px;
+        .text__dec {
+            &-main, &-prefix, &-postfix {
+                font-size: var(--fz-52);
+                line-height: var(--lh-58);
+            }
+        }
+    }
+    &__items {
+        margin-top: var(--margin-80);
+        &-wrapper {
+            gap: 80px 0px;
+        }
+    }
+    &__caption {
+        font-size: 112px;
+        line-height: 120px;
+        color: var(--secondary-color);
+    }
+    &__desc {
+        margin-top: 32px;
+        font-size: 34px;
+        line-height: 38px;
+        color: var(--secondary-color);
+        text-transform: uppercase;
+        max-width: 590px;
+    }
+
+    &__call {
+        position: relative;
+        overflow: hidden;
+        margin-top: var(--padding-150);
+        padding: 80px;
+        background-color: var(--secondary-color);
+        &:before {
+            content: "";
+            position: absolute;
+            top: -89px;
+            right: 0px;
+            background-image: url(../img/vector-4.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            width: 300px;
+            height: 300px;
+            z-index: 0;
+        }
+        &:after {
+            content: "";
+            position: absolute;
+            top: -41px;
+            left: 96px;
+            background-image: url(../img/vector-5.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            width: 837px;
+            height: 328px;
+            z-index: 0;
+        }
+
+        &-caption {
+            font-size: 34px;
+            line-height: 38px;
+            text-transform: uppercase;
+        }
+        &-text {
+            margin-top: 24px;
+            font-size: 18px;
+            line-height: 24px;
+            text-transform: uppercase;
+        }
+    }
+    &__button {
+        z-index: 1;
+    }
+}
