@@ -1,6 +1,6 @@
 .intro {
-    // padding-top: 600px;
-    height: 100vh;
+    padding-top: 600px;
+    // height: 100vh;
     display: flex;
     align-items: flex-end;
     padding-bottom: 64px;
@@ -35,8 +35,16 @@
     }
 }
 
+
+@media (max-width: 991px) {
+    .intro {
+        padding-top: 300px;
+    }
+}
+
 @media (max-width: 575px) {
     .intro {
+        padding-top: 102px;
         &__header {
             span {
                 &:nth-child(1) {

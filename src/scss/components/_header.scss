@@ -7,7 +7,7 @@
 @media (max-width: 991px) {
     .header {
         &.active {
-            z-index: 1;
+            z-index: 2;
         }
         .container {
             position: relative;
@@ -18,6 +18,12 @@
                 flex-direction: column;
                 justify-content: center;
                 padding-top: var(--padding-30);
+                .header__logo {
+                    max-width: 120px!important;   
+                }
+                .header__logo-wrapper {
+                    justify-content: center!important;
+                }
                 .nav__link {
                     color: var(--black-color);
                 }

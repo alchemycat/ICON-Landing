@@ -244,6 +244,9 @@ body {
   width: 100%;
   background-color: var(--white-color);
   transition: all .4s ease;
+  &.active {
+    z-index: 1;
+  }
 }
 
 .text {
