@@ -24,6 +24,8 @@
         font-size: var(--fz-112);
         line-height: var(--lh-120);
         color: var(--secondary-color);
+        font-family: "RobotoMono";
+        font-weight: 400;
     }
     &__desc {
         margin-top: 32px;
@@ -32,6 +34,8 @@
         color: var(--secondary-color);
         text-transform: uppercase;
         max-width: 590px;
+        font-family: "RobotoMono";
+        font-weight: 400;
     }
 
     &__call {
@@ -71,12 +75,16 @@
             font-size: var(--fz-34);
             line-height: var(--lh-38);
             text-transform: uppercase;
+            font-family: "RobotoMono";
+            font-weight: 400;
         }
         &-text {
             margin-top: 24px;
             font-size: 18px;
             line-height: 24px;
             text-transform: uppercase;
+            font-family: "RobotoMono";
+            font-weight: 400;
         }
     }
     &__button {

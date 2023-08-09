@@ -1,12 +1,5 @@
 @charset "UTF-8";
 @font-face {
-  font-family: "Manrope";
-  font-display: swap;
-  src: url("../fonts/Manrope-Medium.woff2") format("woff2"), url("../fonts/Manrope-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
   font-family: "DMMono";
   font-display: swap;
   src: url("../fonts/DMMono-Regular.woff2") format("woff2"), url("../fonts/DMMono-Regular.woff") format("woff");
@@ -25,13 +18,6 @@
   font-display: swap;
   src: url("../fonts/RobotoMono-Medium.woff2") format("woff2"), url("../fonts/RobotoMono-Medium.woff") format("woff");
   font-weight: 500;
-  font-style: normal;
-}
-@font-face {
-  font-family: "ChakraPetch";
-  font-display: swap;
-  src: url("../fonts/ChakraPetch-SemiBold.woff2") format("woff2"), url("../fonts/ChakraPetch-SemiBold.woff") format("woff");
-  font-weight: 600;
   font-style: normal;
 }
 :root {
@@ -94,7 +80,7 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: var(--font-primary);
+  font-family: "RobotoMono";
   font-size: var(--fz-18);
   line-height: var(--lh-24);
   font-weight: 400;
@@ -865,6 +851,8 @@ input, input::placeholder {
   font-size: var(--fz-112);
   line-height: var(--lh-120);
   color: var(--secondary-color);
+  font-family: "RobotoMono";
+  font-weight: 400;
 }
 .numbers__desc {
   margin-top: 32px;
@@ -873,6 +861,8 @@ input, input::placeholder {
   color: var(--secondary-color);
   text-transform: uppercase;
   max-width: 590px;
+  font-family: "RobotoMono";
+  font-weight: 400;
 }
 .numbers__call {
   position: relative;
@@ -911,12 +901,16 @@ input, input::placeholder {
   font-size: var(--fz-34);
   line-height: var(--lh-38);
   text-transform: uppercase;
+  font-family: "RobotoMono";
+  font-weight: 400;
 }
 .numbers__call-text {
   margin-top: 24px;
   font-size: 18px;
   line-height: 24px;
   text-transform: uppercase;
+  font-family: "RobotoMono";
+  font-weight: 400;
 }
 .numbers__button {
   z-index: 1;
