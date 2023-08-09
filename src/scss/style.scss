@@ -130,13 +130,13 @@ body {
 .text__dec {
   display: flex;
 
-  &-h2 {
-    // padding: 35px;
-  }
   &-prefix, &-postfix {
     font-size: var(--fz-34);
     line-height: var(--lh-38);
     color: var(--white-color);
+    font-family: "RobotoMono";
+    font-weight: 400;
+    letter-spacing: 0px;
     &-black {
       color: var(--black-color);
     }
@@ -146,8 +146,11 @@ body {
     font-size: var(--fz-34);
     line-height: var(--lh-38);
     color: var(--third-color);
-    letter-spacing: -3px;
+    // letter-spacing: -3px;
+    letter-spacing: 0px;
     text-align: center;
+    font-family: "RobotoMono";
+    font-weight: 400;
     &:before {
       content: "";
       position: absolute;
@@ -412,6 +415,7 @@ body {
       padding: 0px 8px;
       text-align: center;
       // letter-spacing: -1px;
+      letter-spacing: 0px;
       &:before {
         height: 1px;
         bottom: -1px;
