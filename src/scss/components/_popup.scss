@@ -1,0 +1,115 @@
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 580px;
+    background-color: var(--secondary-color); 
+    z-index: 10;
+    transform: translate(-50%, -50%);
+    padding: 24px;
+    &__close {
+        position: absolute;
+        top: 24px;
+        right: 24px;
+        width: 16px;
+        height: 16px;
+        opacity: 0.6;
+        svg {
+            width: 16px;
+            height: 16px;
+        }
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    &__top {
+        max-width: 345px;
+        gap: 24px 0px;
+    }
+    &__title {
+        font-size: var(--fz-52);
+        line-height: var(--lh-58);
+        text-transform: uppercase;
+        text-align: center;
+        font-family: 'RobotoMono';
+        font-weight: 400;
+        margin-top: 16px;
+    }
+    &__subtitle {
+        font-size: var(--fz-34);
+        line-height: var(--lh-38);
+        text-transform: uppercase;
+        text-align: center;
+        font-family: 'RobotoMono';
+        font-weight: 400;
+    }
+    &__text {
+        margin-top: 64px;
+        font-size: 24px;
+        line-height: 32px;
+        text-transform: uppercase;
+        color: var(--black-color);
+        text-align: center;
+        font-family: 'RobotoMono';
+        font-weight: 400;
+    }
+    &__timer {
+        margin-top: 16px;
+        display: flex;
+        gap: 0px 33px;
+        justify-content: center;
+    }
+    &__time {
+        font-size: var(--fz-52);
+        line-height: var(--lh-58);
+        font-family: 'RobotoMono';
+        font-weight: 400;
+    }
+    &__caption {
+        font-size: 18px;
+        line-height: 24px;
+        text-transform: uppercase;
+        font-family: 'RobotoMono';
+        font-weight: 400;
+    }
+    &__row {
+        display: flex;
+        flex-direction: column;
+        gap: 4px 0px;
+        align-items: center;
+        justify-content: center;
+    }
+    &__form-wrapper {
+        margin-top: 80px;
+    }
+    &__button {
+        max-width: 168px;
+        font-family: 'RobotoMono';
+        font-weight: 400;
+        &-file {
+            font-family: 'RobotoMono';
+            font-weight: 400;
+        }
+    }
+    &__file-wrapper {
+        gap: 0px 16px;
+    }
+    &__tip {
+        font-family: 'RobotoMono';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        color: var(--black-color);
+        max-width: 124px;
+    }
+    &__input {
+        font-family: 'RobotoMono';
+        font-weight: 400;
+        &::placeholder {
+            font-family: 'RobotoMono';
+            font-weight: 400;
+        }
+    }
+}

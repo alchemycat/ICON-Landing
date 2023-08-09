@@ -24,7 +24,7 @@
   font-family: "RobotoMono";
   font-display: swap;
   src: url("../fonts/RobotoMono-Medium.woff2") format("woff2"), url("../fonts/RobotoMono-Medium.woff") format("woff");
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
 }
 @font-face {
@@ -1701,6 +1701,122 @@ input, input::placeholder {
     line-height: 24px;
   }
 }
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 580px;
+  background-color: var(--secondary-color);
+  z-index: 10;
+  transform: translate(-50%, -50%);
+  padding: 24px;
+}
+.popup__close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 16px;
+  height: 16px;
+  opacity: 0.6;
+}
+.popup__close svg {
+  width: 16px;
+  height: 16px;
+}
+.popup__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.popup__top {
+  max-width: 345px;
+  gap: 24px 0px;
+}
+.popup__title {
+  font-size: var(--fz-52);
+  line-height: var(--lh-58);
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "RobotoMono";
+  font-weight: 400;
+  margin-top: 16px;
+}
+.popup__subtitle {
+  font-size: var(--fz-34);
+  line-height: var(--lh-38);
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "RobotoMono";
+  font-weight: 400;
+}
+.popup__text {
+  margin-top: 64px;
+  font-size: 24px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: var(--black-color);
+  text-align: center;
+  font-family: "RobotoMono";
+  font-weight: 400;
+}
+.popup__timer {
+  margin-top: 16px;
+  display: flex;
+  gap: 0px 33px;
+  justify-content: center;
+}
+.popup__time {
+  font-size: var(--fz-52);
+  line-height: var(--lh-58);
+  font-family: "RobotoMono";
+  font-weight: 400;
+}
+.popup__caption {
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-family: "RobotoMono";
+  font-weight: 400;
+}
+.popup__row {
+  display: flex;
+  flex-direction: column;
+  gap: 4px 0px;
+  align-items: center;
+  justify-content: center;
+}
+.popup__form-wrapper {
+  margin-top: 80px;
+}
+.popup__button {
+  max-width: 168px;
+  font-family: "RobotoMono";
+  font-weight: 400;
+}
+.popup__button-file {
+  font-family: "RobotoMono";
+  font-weight: 400;
+}
+.popup__file-wrapper {
+  gap: 0px 16px;
+}
+.popup__tip {
+  font-family: "RobotoMono";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--black-color);
+  max-width: 124px;
+}
+.popup__input {
+  font-family: "RobotoMono";
+  font-weight: 400;
+}
+.popup__input::placeholder {
+  font-family: "RobotoMono";
+  font-weight: 400;
+}
+
 @media (max-width: 1399px) {
   :root {
     --gap-32: 27px;
