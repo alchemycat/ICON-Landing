@@ -25,6 +25,11 @@
     .about {
         &__h2 {
             text-align: center;
+            .text__dec {
+                &-main {
+                    padding: 0px 8px;
+                }
+            }
         }
         &__wrapper {
             gap: 24px;

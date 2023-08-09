@@ -90,9 +90,13 @@
 @media (max-width: 575px) {
    .header {
     padding-top: 16px;
-    // &__logo {
-    //     max-width: 90px;
-    // }
+    &__logo {
+        .text__dec {
+            &-main {
+                padding: 0px 8px;
+            }
+        }
+    }
     .nav__link {
         font-size: 18px;
         line-height: 24px;

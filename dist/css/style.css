@@ -366,6 +366,9 @@ input, input::placeholder {
   .header {
     padding-top: 16px;
   }
+  .header__logo .text__dec-main {
+    padding: 0px 8px;
+  }
   .header .nav__link {
     font-size: 18px;
     line-height: 24px;
@@ -465,6 +468,9 @@ input, input::placeholder {
 @media (max-width: 767px) {
   .about__h2 {
     text-align: center;
+  }
+  .about__h2 .text__dec-main {
+    padding: 0px 8px;
   }
   .about__wrapper {
     gap: 24px;
@@ -781,6 +787,7 @@ input, input::placeholder {
   .important__h2 .text__dec-main {
     font-size: 16px;
     line-height: 20px;
+    padding: 0px 8px;
   }
   .important .text__dec-prefix, .important .text__dec-postfix {
     letter-spacing: 0px;
@@ -1006,7 +1013,7 @@ input, input::placeholder {
     letter-spacing: 0px;
   }
   .numbers__h2 .text__dec-main {
-    padding: 0px 36px;
+    padding: 0px 8px;
   }
   .numbers__items-wrapper {
     gap: 24px 0px;
@@ -1129,6 +1136,9 @@ input, input::placeholder {
     line-height: 20px;
     letter-spacing: 0px;
   }
+  .rooms__h2 .text__dec-main {
+    padding: 0px 8px;
+  }
   .rooms__wrapper-2 {
     margin-top: 28px;
   }
@@ -1220,6 +1230,9 @@ input, input::placeholder {
     line-height: 20px;
     letter-spacing: 0px;
   }
+  .team__h2 .text__dec-main {
+    padding: 0px 8px;
+  }
 }
 .ques {
   padding: var(--padding-150) 0px;
@@ -1268,6 +1281,9 @@ input, input::placeholder {
     font-size: 16px;
     line-height: 20px;
     letter-spacing: 0px;
+  }
+  .ques__h2 .text__dec-main {
+    padding: 0px 8px;
   }
   .ques__wrapper-2 {
     margin-top: 32px;
@@ -1476,6 +1492,9 @@ input, input::placeholder {
     font-size: 16px;
     line-height: 20px;
   }
+  .work__h2 .text__dec-main {
+    padding: 0px 8px;
+  }
   .work__caption {
     font-size: 18px;
     line-height: 24px;
@@ -1623,7 +1642,9 @@ input, input::placeholder {
     position: absolute;
     top: -50px;
     left: 10px;
-    max-width: 157px;
+  }
+  .footer__logo .text__dec-main {
+    padding: 0px 8px;
   }
   .footer__logo .text__dec-main:before {
     height: 2px;
@@ -1963,6 +1984,7 @@ input, input::placeholder {
     transform: rotate(45deg) translate(2px, 3px);
   }
   .text__dec-main {
+    padding: 0px 8px;
     text-align: center;
   }
   .text__dec-main:before {

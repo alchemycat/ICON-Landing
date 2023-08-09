@@ -103,9 +103,10 @@
             position: absolute;
             top: -50px;
             left: 10px;
-            max-width: 157px;
+            // max-width: 157px;
             .text__dec {
                 &-main {
+                    padding: 0px 8px;
                     &:before {
                         height: 2px;
                     }
