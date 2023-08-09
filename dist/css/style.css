@@ -1602,9 +1602,6 @@ input, input::placeholder {
   text-transform: uppercase;
   transition: all 0.3s ease;
 }
-.footer__address-link:hover {
-  color: var(--secondary-color);
-}
 .footer__address-text {
   font-size: 18px;
   line-height: 24px;

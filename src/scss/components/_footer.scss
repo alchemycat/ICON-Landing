@@ -71,9 +71,9 @@
             color: #E07E44;
             text-transform: uppercase;
             transition: all .3s ease;
-            &:hover {
-                color: var(--secondary-color);
-            }
+            // &:hover {
+            //     color: var(--secondary-color);
+            // }
         }
         &-text {
             font-size: 18px;
