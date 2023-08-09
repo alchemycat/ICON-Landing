@@ -10,19 +10,19 @@ document.addEventListener("DOMContentLoaded", () => {
 	const header = document.querySelector(".header");
 // 	const intro = document.querySelector(".intro");
 
-// 	const navLinks = document.querySelectorAll('.nav__link');
+	const navLinks = document.querySelectorAll('.nav__link');
 
-// 	navLinks.forEach(lnk => {
-// 		lnk.addEventListener('click', () => {
-// 			try {
-// 				if (overlay.classList.contains('active')) {
-// 					burger.click();
-// 				}
-// 			} catch(err) {
-// 				console.log(err.message);
-// 			}
-// 		})
-// 	})
+	navLinks.forEach(lnk => {
+		lnk.addEventListener('click', () => {
+			try {
+				if (overlay.classList.contains('active')) {
+					burger.click();
+				}
+			} catch(err) {
+				console.log(err.message);
+			}
+		})
+	})
 
 	burger.addEventListener("click", toggleBurger);
 

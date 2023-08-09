@@ -2,11 +2,12 @@
     width: 100%;
     position: absolute;
     padding-top: var(--padding-20);
+    z-index: 5;
 }
 
 @media (max-width: 991px) {
     .header {
-        z-index: 2;
+        z-index: 5;
         .container {
             position: relative;
         }
