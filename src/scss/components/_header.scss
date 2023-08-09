@@ -71,6 +71,9 @@
 @media (max-width: 575px) {
    .header {
     padding-top: 16px;
+    &__logo {
+        max-width: 90px;
+    }
     .nav__link {
         font-size: 18px;
         line-height: 24px;

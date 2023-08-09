@@ -334,6 +334,9 @@ input, input::placeholder {
   .header {
     padding-top: 16px;
   }
+  .header__logo {
+    max-width: 90px;
+  }
   .header .nav__link {
     font-size: 18px;
     line-height: 24px;
@@ -1543,6 +1546,64 @@ input, input::placeholder {
   margin-top: 24px;
 }
 
+@media (max-width: 991px) {
+  .footer__wrapper {
+    gap: 24px 0px;
+  }
+}
+@media (max-width: 767px) {
+  .footer .container {
+    position: relative;
+  }
+  .footer__logo {
+    position: absolute;
+    top: -50px;
+    left: 10px;
+    max-width: 157px;
+  }
+  .footer__logo .text__dec-main:before {
+    height: 2px;
+  }
+  .footer__order-1 {
+    order: 4;
+  }
+  .footer__col-1 {
+    gap: 12px 0px;
+  }
+  .footer__contacts {
+    margin-top: 10px;
+    gap: 10px 0px;
+  }
+  .footer__contacts-link {
+    gap: 0px 12px;
+  }
+  .footer__address {
+    margin-top: 10px;
+    gap: 8px 0px;
+  }
+  .footer__address-text {
+    margin-top: 8px;
+    margin-bottom: 0px;
+  }
+}
+@media (max-width: 575px) {
+  .footer {
+    padding-top: 100px;
+  }
+  .footer__logo {
+    max-width: 140px;
+  }
+  .footer__logo .text__dec-prefix, .footer__logo .text__dec-postfix {
+    letter-spacing: 0px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .footer__logo .text__dec-main {
+    letter-spacing: 0px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
 @media (max-width: 1399px) {
   :root {
     --gap-32: 27px;
