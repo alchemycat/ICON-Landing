@@ -243,10 +243,8 @@ body {
   height: 100%;
   width: 100%;
   background-color: var(--white-color);
-  transition: all .4s ease;
-  &.active {
-    z-index: 1;
-  }
+  transition: all .1s ease;
+  z-index: 1;
 }
 
 .text {

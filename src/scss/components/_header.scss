@@ -6,11 +6,13 @@
 
 @media (max-width: 991px) {
     .header {
-        &.active {
-            z-index: 2;
-        }
+        z-index: 2;
         .container {
             position: relative;
+        }
+        &__nav {
+            transition: none;
+
         }
         &__wrapper {
             transition: all .3s ease;
@@ -19,10 +21,13 @@
                 justify-content: center;
                 padding-top: var(--padding-30);
                 .header__logo {
-                    max-width: 120px!important;   
+                    max-width: 180px!important;
+                    width: 180px;
+                    transition: none;
                 }
                 .header__logo-wrapper {
                     justify-content: center!important;
+                    width: 200px!important;
                 }
                 .nav__link {
                     color: var(--black-color);
@@ -86,10 +91,15 @@
     }
     &.active {
         .header__logo {
+            max-width: 120px!important;
+            width: 120px;
             span {
                 font-size: 20px;
                 line-height: 24px;
             }
+        }
+        .header__logo-wrapper {
+            width: 140px!important;
         }
     }
    }

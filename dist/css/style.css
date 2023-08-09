@@ -261,9 +261,7 @@ input, input::placeholder {
   height: 100%;
   width: 100%;
   background-color: var(--white-color);
-  transition: all 0.4s ease;
-}
-.overlay.active {
+  transition: all 0.1s ease;
   z-index: 1;
 }
 
@@ -284,11 +282,14 @@ input, input::placeholder {
 }
 
 @media (max-width: 991px) {
-  .header.active {
+  .header {
     z-index: 2;
   }
   .header .container {
     position: relative;
+  }
+  .header__nav {
+    transition: none;
   }
   .header__wrapper {
     transition: all 0.3s ease;
@@ -299,10 +300,13 @@ input, input::placeholder {
     padding-top: var(--padding-30);
   }
   .header__wrapper.active .header__logo {
-    max-width: 120px !important;
+    max-width: 180px !important;
+    width: 180px;
+    transition: none;
   }
   .header__wrapper.active .header__logo-wrapper {
     justify-content: center !important;
+    width: 200px !important;
   }
   .header__wrapper.active .nav__link {
     color: var(--black-color);
@@ -350,9 +354,16 @@ input, input::placeholder {
     font-size: 18px;
     line-height: 24px;
   }
+  .header.active .header__logo {
+    max-width: 120px !important;
+    width: 120px;
+  }
   .header.active .header__logo span {
     font-size: 20px;
     line-height: 24px;
+  }
+  .header.active .header__logo-wrapper {
+    width: 140px !important;
   }
 }
 .intro {
@@ -402,6 +413,9 @@ input, input::placeholder {
   }
   .intro__header span:nth-child(1) {
     letter-spacing: -3px;
+  }
+  .intro__button {
+    max-width: 140px;
   }
 }
 .about {
@@ -1432,6 +1446,10 @@ input, input::placeholder {
   .work__h2 {
     max-width: 200px;
   }
+  .work__h2 .text__dec-main, .work__h2 .text__dec-postfix, .work__h2 .text__dec-prefix {
+    font-size: 30px;
+    line-height: 40px;
+  }
   .work__img, .work__desc {
     margin-top: 25px;
   }
@@ -1440,6 +1458,13 @@ input, input::placeholder {
   }
 }
 @media (max-width: 575px) {
+  .work__h2 {
+    max-width: 125px;
+  }
+  .work__h2 .text__dec-main, .work__h2 .text__dec-prefix, .work__h2 .text__dec-postfix {
+    font-size: 16px;
+    line-height: 20px;
+  }
   .work__caption {
     font-size: 18px;
     line-height: 24px;

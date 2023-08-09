@@ -178,6 +178,12 @@
         }
         &__h2 {
             max-width: 200px;
+            .text__dec {
+                &-main, &-postfix, &-prefix {
+                    font-size: 30px;
+                    line-height: 40px;
+                }
+            }
         }
         &__img, &__desc {
             margin-top: 25px;
@@ -190,6 +196,15 @@
 
 @media (max-width: 575px) {
     .work {
+        &__h2 {
+            max-width: 125px;
+            .text__dec {
+                &-main, &-prefix, &-postfix {
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+            }
+        }
         &__caption {
             font-size: 18px;
             line-height: 24px;
