@@ -2,11 +2,14 @@
     padding: var(--padding-150) 0px;
     &__h2 {
         text-transform: uppercase;
-        max-width: 396px;
+        // max-width: 396px;
         .text__dec {
             &-main, &-prefix, &-postfix {
                 font-size: var(--fz-52);
                 line-height: var(--lh-58);
+            }
+            &-main {
+                padding: 0px 25px;
             }
         }
     }
@@ -89,17 +92,17 @@
 }
 
 @media (max-width: 767px) {
-    .rooms {
-        &__h2 {
-            max-width: 200px;
-        }
-    }
+    // .rooms {
+        // &__h2 {
+        //     max-width: 200px;
+        // }
+    // }
 }
 
 @media (max-width: 575px) {
     .rooms {
         &__h2 {
-            max-width: 124px;
+            // max-width: 124px;
             .text__dec {
                 &-prefix, &-postfix, &-main {
                     font-size: 16px;

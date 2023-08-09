@@ -2,11 +2,14 @@
     padding: var(--padding-150) 0px;
     &__h2 {
         text-transform: uppercase;
-        max-width: 396px;
+        // max-width: 396px;
         .text__dec {
             &-main, &-prefix, &-postfix {
                 font-size: var(--fz-52);
                 line-height: var(--lh-58);
+            }
+            &-main {
+                padding: 0px 25px;
             }
         }
     }
@@ -34,9 +37,9 @@
 
 @media (max-width: 767px) {
     .ques {
-        &__h2 {
-            max-width: 200px;
-        }
+        // &__h2 {
+        //     max-width: 200px;
+        // }
         &__wrapper-2 {
             margin-top: 40px;
         }
@@ -49,7 +52,7 @@
 @media (max-width: 575px) {
     .ques {
         &__h2 {
-            max-width: 125px;
+            // max-width: 125px;
             .text__dec {
                 &-prefix, &-postfix, &-main {
                     font-size: 16px;

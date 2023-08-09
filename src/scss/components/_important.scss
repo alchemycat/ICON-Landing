@@ -11,6 +11,7 @@
                 font-size: var(--fz-52);
                 line-height: var(--lh-58);
                 text-transform: uppercase;
+                padding: 0px 25px;
             }
         }
     }
@@ -126,8 +127,9 @@
         }
     }
     &__caption {
-        max-width: 100%;
+        width: 100%;
         .text__dec {
+            width: 100%;
             &-prefix, &-postfix {
                 font-size: var(--fz-34);
                 line-height: var(--lh-38);
@@ -139,7 +141,7 @@
                 line-height: var(--lh-38);
                 text-transform: uppercase;
                 letter-spacing: -3px;
-                padding: 0px 25px;
+                width: 100%;
             }
         }
     }
@@ -302,9 +304,9 @@
 
 @media (max-width: 767px) {
     .important {
-        &__h2 {
-            max-width: 200px;
-        }
+        // &__h2 {
+        //     max-width: 200px;
+        // }
         &__list {
             margin-top: 40px;
         }
@@ -359,7 +361,7 @@
     .important {
         padding: 24px 0px;
         &__h2 {
-            max-width: 114px;
+            // max-width: 114px;
             .text__dec {
                 &-prefix, &-postfix {
                     font-size: 16px;

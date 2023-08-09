@@ -2,6 +2,13 @@
     padding-top: var(--padding-150);
     padding-bottom: 50px;
     background-color: var(--white-color);
+    &__logo {
+        .text__dec {
+            &-main {
+                padding: 0px 20px;
+            }
+        }
+    }
     &__text {
         font-size: 18px;
         line-height: 24px;

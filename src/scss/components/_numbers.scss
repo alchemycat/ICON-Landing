@@ -3,11 +3,14 @@
     padding: var(--padding-150) 0px;
     &__h2 {
         text-transform: uppercase;
-        max-width: 396px;
+        // max-width: 396px;
         .text__dec {
             &-main, &-prefix, &-postfix {
                 font-size: var(--fz-52);
                 line-height: var(--lh-58);
+            }
+            &-main {
+                padding: 0px 36px;
             }
         }
     }
@@ -131,9 +134,9 @@
 
 @media (max-width: 767px) {
     .numbers {
-        &__h2 {
-            max-width: 200px;
-        }
+        // &__h2 {
+            // max-width: 200px;
+        // }
         &__items-wrapper {
             gap: 25px 0px;
         }
@@ -185,12 +188,15 @@
 @media (max-width: 575px) {
     .numbers {
         &__h2 {
-            max-width: 105px;
+            // max-width: 105px;
             .text__dec {
                 &-prefix, &-postfix, &-main {
                     font-size: 16px;
                     line-height: 20px;
                     letter-spacing: 0px;
+                }
+                &-main {
+                    padding: 0px 36px;
                 }
             }
         }

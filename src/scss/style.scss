@@ -129,10 +129,9 @@ body {
 
 .text__dec {
   display: flex;
-  width: 100%;
-  max-width: 254px;
+
   &-h2 {
-    max-width: 396px;
+    // padding: 35px;
   }
   &-prefix, &-postfix {
     font-size: var(--fz-34);
@@ -143,7 +142,6 @@ body {
     }
   }
   &-main {
-    width: 100%;
     position: relative;
     font-size: var(--fz-34);
     line-height: var(--lh-38);
@@ -408,9 +406,9 @@ body {
   }
 
   .text__dec {
-    width: 100%;
+    // width: 100%;
     &-main {
-      width: 100%;
+      // width: 100%;
       text-align: center;
       // letter-spacing: -1px;
       &:before {
